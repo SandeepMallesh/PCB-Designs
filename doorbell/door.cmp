@@ -1,0 +1,43 @@
+Cmp-Mod V01 Created by PcbNew   date = 10/28/18 12:06:17
+
+BeginCmp
+TimeStamp = 5BC0B111
+Path = /5BC0AE9E
+Reference = P1;
+ValeurCmp = CONN_01X02;
+IdModule  = Connectors_Samtec:SDL-102-X-XX_2x01;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BC0B117
+Path = /5BC0AED2
+Reference = P2;
+ValeurCmp = CONN_01X02;
+IdModule  = Connectors_Samtec:SDL-102-X-XX_2x01;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BC0B11E
+Path = /5BC0AE25
+Reference = Q1;
+ValeurCmp = BC547;
+IdModule  = TO_SOT_Packages_THT:TO-92_Inline_Wide;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BC0B125
+Path = /5BC0AE75
+Reference = Q2;
+ValeurCmp = BC548;
+IdModule  = TO_SOT_Packages_THT:TO-92_Inline_Wide;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BC0B12B
+Path = /5BC0AEFC
+Reference = R1;
+ValeurCmp = R;
+IdModule  = Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal;
+EndCmp
+
+EndListe

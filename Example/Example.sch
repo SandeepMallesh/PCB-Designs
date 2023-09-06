@@ -1,0 +1,123 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:LED D1
+U 1 1 5EE19714
+P 4950 3350
+F 0 "D1" H 4943 3095 50  0000 C CNN
+F 1 "LED" H 4943 3186 50  0000 C CNN
+F 2 "" H 4950 3350 50  0001 C CNN
+F 3 "~" H 4950 3350 50  0001 C CNN
+	1    4950 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5EE19D0A
+P 4550 3350
+F 0 "R1" V 4343 3350 50  0000 C CNN
+F 1 "R" V 4434 3350 50  0000 C CNN
+F 2 "" V 4480 3350 50  0001 C CNN
+F 3 "~" H 4550 3350 50  0001 C CNN
+	1    4550 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J1
+U 1 1 5EE1A2F7
+P 4050 3400
+F 0 "J1" H 3968 3617 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 3968 3526 50  0000 C CNN
+F 2 "" H 4050 3400 50  0001 C CNN
+F 3 "~" H 4050 3400 50  0001 C CNN
+	1    4050 3400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 3400 4250 3350
+Wire Wire Line
+	4250 3350 4350 3350
+Wire Wire Line
+	4700 3350 4800 3350
+Wire Wire Line
+	4250 3500 4350 3500
+Wire Wire Line
+	5100 3500 5100 3350
+$Comp
+L power:VCC #PWR01
+U 1 1 5EE1B745
+P 4350 3250
+F 0 "#PWR01" H 4350 3100 50  0001 C CNN
+F 1 "VCC" H 4365 3423 50  0000 C CNN
+F 2 "" H 4350 3250 50  0001 C CNN
+F 3 "" H 4350 3250 50  0001 C CNN
+	1    4350 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5EE1BDD5
+P 4350 3600
+F 0 "#PWR02" H 4350 3350 50  0001 C CNN
+F 1 "GND" H 4355 3427 50  0000 C CNN
+F 2 "" H 4350 3600 50  0001 C CNN
+F 3 "" H 4350 3600 50  0001 C CNN
+	1    4350 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 3600 4350 3550
+Connection ~ 4350 3500
+Wire Wire Line
+	4350 3500 5100 3500
+Wire Wire Line
+	4350 3250 4350 3300
+Connection ~ 4350 3350
+Wire Wire Line
+	4350 3350 4400 3350
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5EE1C48A
+P 4300 3300
+F 0 "#FLG0101" H 4300 3375 50  0001 C CNN
+F 1 "PWR_FLAG" V 4300 3427 50  0000 L CNN
+F 2 "" H 4300 3300 50  0001 C CNN
+F 3 "~" H 4300 3300 50  0001 C CNN
+	1    4300 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5EE1CB94
+P 4300 3550
+F 0 "#FLG0102" H 4300 3625 50  0001 C CNN
+F 1 "PWR_FLAG" V 4300 3677 50  0000 L CNN
+F 2 "" H 4300 3550 50  0001 C CNN
+F 3 "~" H 4300 3550 50  0001 C CNN
+	1    4300 3550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4300 3300 4350 3300
+Connection ~ 4350 3300
+Wire Wire Line
+	4350 3300 4350 3350
+Wire Wire Line
+	4300 3550 4350 3550
+Connection ~ 4350 3550
+Wire Wire Line
+	4350 3550 4350 3500
+$EndSCHEMATC
